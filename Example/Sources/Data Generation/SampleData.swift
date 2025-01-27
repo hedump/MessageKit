@@ -212,10 +212,14 @@ final internal class SampleData {
       return MockMessage(attributedText: attributedText, user: user, messageId: uniqueID, date: date)
     case .Photo:
       let image = messageImages.random()!
-      return MockMessage(image: image, user: user, messageId: uniqueID, date: date)
+     let texst = ["Запрос на пополнение баланса на 6800 руб по заказу #12345", ""]
+        let text = texst.random()!
+        return MockMessage(image: image, user: user, messageId: uniqueID, date: date, text: text)
     case .PhotoFromURL:
+        let texst = ["Запрос на пополнение баланса на 6800 руб по заказу #12345", ""]
+           let text = texst.random()!
       let imageURL: URL = messageImageURLs.random()!
-      return MockMessage(imageURL: imageURL, user: user, messageId: uniqueID, date: date)
+      return MockMessage(imageURL: imageURL, user: user, messageId: uniqueID, date: date, text: text)
     case .Video:
       let image = messageImages.random()!
       return MockMessage(thumbnail: image, user: user, messageId: uniqueID, date: date)
