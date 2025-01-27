@@ -43,7 +43,7 @@ open class MediaMessageCell: MessageContentCell {
         let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 14)
+        label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = .black
         // По умолчанию можно скрыть, если в большинстве случаев текста нет
         label.isHidden = false
